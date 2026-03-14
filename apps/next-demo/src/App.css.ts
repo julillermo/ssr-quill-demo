@@ -17,16 +17,57 @@ globalStyle("#root", {
   color: "#e2e8f0",
 });
 
+export const page = style({
+  width: "100%",
+  maxWidth: "1200px",
+  margin: "0 auto",
+  padding: "2.5rem 1.5rem 3rem",
+  display: "flex",
+  flexDirection: "column",
+  gap: "1.5rem",
+});
+
+export const pageHeader = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: "0.5rem",
+});
+
+export const eyebrow = style({
+  textTransform: "uppercase",
+  letterSpacing: "0.08em",
+  fontSize: "0.8rem",
+  color: "#94a3b8",
+});
+
+export const pageHeading = style({
+  margin: 0,
+  fontSize: "1.9rem",
+  letterSpacing: "-0.02em",
+});
+
+export const pageSub = style({
+  margin: 0,
+  color: "#cbd5e1",
+  maxWidth: "62ch",
+});
+
 export const shell = style({
   width: "100%",
-  minHeight: "100vh",
-  borderRadius: "0",
+  minHeight: "70vh",
+  borderRadius: "18px",
   background: "#0f172a",
   padding: "1.5rem",
   display: "flex",
   gap: "1.5rem",
+  alignItems: "stretch",
   boxShadow: "0 20px 60px rgba(2, 6, 23, 0.65)",
-  border: "none",
+  border: "1px solid rgba(148, 163, 184, 0.25)",
+  "@media": {
+    "screen and (max-width: 960px)": {
+      flexDirection: "column",
+    },
+  },
 });
 
 export const sidePanel = style({
